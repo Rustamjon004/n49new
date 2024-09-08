@@ -1,31 +1,45 @@
+{% extends "base.html" %}
+{% block content %}
+{{ posts.0.body }}
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>my first home page</title>
-    <style>
-        h1.custom-style {
-            text-align: center;
-            background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRk403j6nlsF2-gi9cca9f7cWy9Eg1KkpejR70mvQUeIirhtcIRvhTYZJiDmw&s");
-            color:white;
-        }
-    </style>
 
-</head>
-<body>
+
+
+
+ <main class="container">
     <h1 class="custom-style">THIS IS HOME PAGE </h1>
     <h1  class="custom-style"> THE PAGES YOU WANT</h1>
-</body>
-<br>
-<br>
-<a href="/profile/">shaxsiy profile</a>
-<br>
-<a href="/dashboard/">dashboard page</a>
-<br>
-<a href="/contacts/">contacts page</a>
-<br>
-<a href="/products/">products page</a>
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+     <div class="d-flex flex-column align-items-center  gap-3 my-2">
+         <div class="border border-2 rounded py-2 px-4 ">
+             <h3>Author:RUSTAM</h3>
+             <h2>Title:My title</h2>
+             <p>body:Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
 
-</body>
-</html>
+         </div>
+     </div>
+
+
+ </main>>
+
+<br>
+<br>
+<a class="btn    btn-outline-info" href="/profile/">shaxsiy profile</a>
+<br>
+<br>
+<a class="btn btn-sm btn-outline-danger" href="dashboard/">dashboard page</a>
+<br>
+<br>
+<a class="btn btn-sm btn-outline-success" href="contacts/">contacts page</a>
+<br>
+<br>
+<a  class="btn btn-sm btn-outline-secondary " href="products/">products page</a>
+
+
+
+
+{% endblock content  %}
